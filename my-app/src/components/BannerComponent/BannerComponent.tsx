@@ -1,6 +1,6 @@
 import { Banner } from "./Banner";
 import ReactDOM from "react-dom/client";
-import styles from "./Banner.css?inline";
+import styles from "./Banner.scss?inline";
 import { type BannerType } from "./Banner";
 
 class BannerComponent extends HTMLElement {

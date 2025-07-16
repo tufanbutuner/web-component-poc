@@ -1,6 +1,6 @@
 import { StatusTag } from "./StatusTag";
 import ReactDOM from "react-dom/client";
-import styles from "./StatusTag.css?inline";
+import styles from "./StatusTag.scss?inline";
 
 class StatusTagComponent extends HTMLElement {
   constructor() {

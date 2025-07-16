@@ -1,5 +1,3 @@
-import "./StatusTag.css";
-
 type Props = { status: string };
 
 export const StatusTag = ({ status }: Props) => {

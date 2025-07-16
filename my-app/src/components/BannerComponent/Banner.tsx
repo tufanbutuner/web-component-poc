@@ -1,5 +1,4 @@
 import { type PropsWithChildren } from "react";
-import "./Banner.css";
 
 export type BannerType = "success" | "important" | "error";
 

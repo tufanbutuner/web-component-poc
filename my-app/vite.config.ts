@@ -22,6 +22,11 @@ export default defineConfig({
   plugins: [react()],
   css: {
     modules: false,
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+      },
+    },
   },
   build: {
     target: "esnext",
