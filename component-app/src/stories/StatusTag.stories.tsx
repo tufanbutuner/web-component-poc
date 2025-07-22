@@ -1,17 +1,16 @@
-import StatusTagComponent from "../components/StatusTagComponent/StatusTagComponent";
-
 export default {
   title: "Components/StatusTag",
-  component: StatusTagComponent,
+  component: "status-tag",
   argTypes: {
-    status: {},
+    status: { control: "text" },
   },
 };
 
-export const Unused = (args) => <status-tag {...args} />;
+export const Unused = (args: { status: string }) => <status-tag {...args} />;
 Unused.args = {
   status: "Unused",
 };
+
 export const Used = (args) => <status-tag {...args} />;
 Used.args = {
   status: "Used",

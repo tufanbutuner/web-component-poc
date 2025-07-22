@@ -1,6 +1,7 @@
 import "./App.css";
 import { create } from "zustand";
 import Navbar from "./components/Navbar";
+import { CaseInfoComponent } from "./components/CaseInfo";
 
 const useStore = create((set) => ({
   bannerType: "success",
@@ -23,6 +24,11 @@ function App() {
       >
         <Navbar />
       </div>
+
+      <section>
+        <CaseInfoComponent />
+      </section>
+
       <section
         style={{
           marginTop: "64px",
