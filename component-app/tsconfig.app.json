@@ -23,9 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": [
-    "src",
-    "src/components/StatusTagComponent/status-tag.d.ts",
-    "src/stories"
-  ]
+  "include": ["src", "src/types"]
 }

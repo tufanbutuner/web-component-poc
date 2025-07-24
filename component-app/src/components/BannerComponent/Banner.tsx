@@ -2,7 +2,7 @@ import { type PropsWithChildren } from "react";
 
 export type BannerType = "success" | "important" | "error";
 
-type Props = {
+export type BannerProps = {
   type: BannerType;
   header: string;
   content?: string;
@@ -12,7 +12,7 @@ export const Banner = ({
   type = "success",
   header,
   content,
-}: PropsWithChildren<Props>) => {
+}: PropsWithChildren<BannerProps>) => {
   const getBannerClass = () => {
     switch (type) {
       case "success":

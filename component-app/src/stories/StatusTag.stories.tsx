@@ -1,12 +1,15 @@
+// @ts-nocheck ignore type checking for this file
+import { StatusTag } from "../components/StatusTagComponent/StatusTag";
+
 export default {
   title: "Components/StatusTag",
-  component: "status-tag",
+  component: <StatusTag />,
   argTypes: {
     status: { control: "text" },
   },
 };
 
-export const Unused = (args: { status: string }) => <status-tag {...args} />;
+export const Unused = (args) => <status-tag {...args} />;
 Unused.args = {
   status: "Unused",
 };

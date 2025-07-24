@@ -7,7 +7,7 @@ export const CaseInfoSummary = ({ caseInfo }: Props) => {
     return null;
   }
 
-  const surname = caseInfo?.leadDefendantSurname.toString().toUpperCase();
+  const surname = caseInfo?.leadDefendantSurname?.toString().toUpperCase();
   const firstNames = caseInfo?.leadDefendantFirstNames
     ? `, ${caseInfo?.leadDefendantFirstNames}`
     : "";
